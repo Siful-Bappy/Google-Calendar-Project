@@ -10,6 +10,7 @@ import { useState } from "react";
 function App() {
   // console.table(getMonth());
   const [currentMonth, setCurrentMonth] = useState(getMonth());
+  // console.log(currentMonth);
   return (
     <div className="h-screen flex flex-col">
       <CalendarHeader></CalendarHeader>
