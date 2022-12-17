@@ -4,12 +4,18 @@ import "./App.css";
 import CalendarHeader from "./components/CalendarHeader";
 import Sidebar from "./components/Sidebar";
 import Month from "./components/Month";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import GlobalContext from "./context/GlobalContext";
 
 function App() {
   // console.table(getMonth());
+  const {monthIndex} = useContext(GlobalContext);
+  console.log(monthIndex);
   const [currentMonth, setCurrentMonth] = useState(getMonth());
-  // console.log(currentMonth);
+  useEffect(() => {
+    setCurrentMonth(getMonth(monthIndex))
+  }, [monthIndex])
+
   return (
     <div className="h-screen flex flex-col">
       <CalendarHeader></CalendarHeader>
