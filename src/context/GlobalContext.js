@@ -10,7 +10,9 @@ const GlobalContext = React.createContext({
 
     },
     daySelected: null,
-    setDaySelected: (index) => {}
+    setDaySelected: (index) => {},
+    showEventModel: false,
+    setShowEventModel: (index) => {}
 })
 
 export default GlobalContext;
