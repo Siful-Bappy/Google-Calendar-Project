@@ -13,7 +13,7 @@ const ContextWrapper = (props) => {
       setMonthIndex(smallCalendarMonth);
     }
   }, [smallCalendarMonth]);
-  console.log(DaySelected, "Clicked");
+  // console.log(DaySelected, "Clicked");
   return (
     <GlobalContext.Provider
       value={{
