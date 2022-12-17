@@ -14,4 +14,6 @@ function getMonth(month = dayjs().month()) {
     return dayMatrix;
 }
 
+// console.log(dayjs().month())
+
 export default getMonth;

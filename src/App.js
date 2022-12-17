@@ -6,7 +6,6 @@ import Sidebar from "./components/Sidebar";
 import Month from "./components/Month";
 import { useState } from "react";
 
-
 function App() {
   // console.table(getMonth());
   const [currentMonth, setCurrentMonth] = useState(getMonth());
