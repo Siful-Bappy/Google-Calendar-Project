@@ -46,6 +46,7 @@ const EventModel = () => {
               className="pt-3 border-0 text-gray-600 pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-blue-500"
               onChange={(e) => setDescription(e.target.value)}
             />
+            <span className="material-icons-outlined text-gray-400">bookmark_border</span>
           </div>
         </div>
       </form>
